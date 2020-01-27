@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <label>
+            <input v-model="search">
+        </label>
+        <div class="list">
+            <div class="id"> ID </div>
+            <div class="name"> NAME </div>
+            <div class="user"> Username </div>
+            <div class="mail"> Email </div>
+        </div>
+        <div class="list" v-for="user in filter">
+            <div class="id"> {{user.id}} </div>
+            <div class="name"> {{user.name}} </div>
+            <div class="user"> {{user.username}} </div>
+            <div class="mail"> {{user.email}} </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="js.js" rel="script"></script>
+</html>

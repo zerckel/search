@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    overflow-x:hidden ;
+}
+#app{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+.list{
+    width: 100%;
+    margin-top: 20px;
+    border-bottom: solid 1px black;
+    padding: 5px;
+    display: flex;
+}
+.list .id{
+    width: 10%;
+}
+.list .name, .list .user, .list .mail{
+    width: 30%;
+}
